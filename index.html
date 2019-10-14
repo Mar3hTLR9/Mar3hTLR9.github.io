@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+footer1 {
+  background-color: rgb(0, 0, 0);
+  float: left;
+  padding: 20px;
+  width: 50%;
+  color: white;
+}
+
+footer2 {
+  background-color: rgb(0, 0, 0);
+  float: right;
+  padding: 20px;
+  width: 50%;
+  color: white;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  footer1, footer2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
 <body>
 
-<h1 style="color:Tomato;">Hello in different languages</h1>
+<header>
+  <h2>Thresh</h2>
+</header>
+  
+  <article>   
+    <p>Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death, for Thresh wreaks agony upon their souls, imprisoning them in his lantern to torture for all eternity.</p>
 
+	<p>In an age history has all but forgotten, the man who would later be known as Thresh was once a member of an order devoted to gathering and protecting knowledge. The masters of this order tasked him with guarding a hidden underground vault filled with dangerous and corrupted magical artifacts. Thresh was incredibly strong-willed and methodical, which made him well-suited to such work.</p>
 
-<a href="index1a">Vietnamese</a>
+	<p>The vault Thresh guarded was buried deep beneath the citadel at the center of an island chain and protected by runic sigils, arcane locks and potent wards. Spending such time in the presence of dark spells began to affect Thresh as the magic sought out his innate malice. For years the relics preyed on his insecurities, taunting him with his deepest fears and feeding his bitterness.</p>
+    
+  </article>
+
+<footer1>
+  <p>Friend</p>
+  <a href="index1a">Vietnamese</a>
 <br/>
 
 
@@ -13,9 +85,20 @@
 <br/>
 
 <a href="index1c">Adele</a>
+</footer1>
+
+<footer2>
+  <p>Foe</p>
+  <a href="index1a">Vietnamese</a>
+<br/>
 
 
-<p id="demo"></p>
+<a href="index1b">Japanese</a>
+<br/>
+
+<a href="index1c">Adele</a>
+</footer2>
 
 </body>
-</html> 
+</html>
+
