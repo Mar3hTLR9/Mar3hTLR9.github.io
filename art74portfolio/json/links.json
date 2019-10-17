@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Glitch",
+        "color": "red",
+        "icon": "web",
+        "url": "https://google.com"
+	},
+    {
+        "name": "Meme mashup",
+        "color": "red",
+        "icon": "web",
+        "url": "https://google.com"
+	},
+    {
+        "name": "Minecraft",
+        "color": "red",
+        "icon": "web",
+        "url": "https://google.com"
+	},
+    {
+        "name": "Scrupture",
+        "color": "red",
+        "icon": "web",
+        "url": "https://google.com"
+	},
+	{
+        "name": "Net.art",
+        "color": "red",
+        "icon": "web",
+        "url": "https://google.com"
+	}
+]
