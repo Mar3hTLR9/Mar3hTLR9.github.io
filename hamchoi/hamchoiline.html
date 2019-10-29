@@ -11,6 +11,55 @@
 </head>
 	
 <style>
+	/*Responsive gallery style*/
+	div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+	
 /*Now the CSS*/
 * {margin: 0; padding: 0;}
 
@@ -178,7 +227,63 @@ The markup will be simple nested lists
 	</ul>
 	
 	<p>Last patch: Fall 2019</p>
-	<img class="img-fluid rounded" src="Michelle.jpg" alt="indeximage1">
+	</br>
+	</br>
+	
+	<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="fall2018reveal.jpg">
+      <img src="fall2018reveal.jpg" alt="fall2018reveal" width="600" height="400">
+    </a>
+    <div class="desc">Fall 2018 Reveal</div>
+  </div>
+</div>
+	
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019reveal.jpg">
+      <img src="spring2019reveal.jpg" alt="spring2019reveal" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Reveal</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019a.jpg">
+      <img src="spring2019a.jpg" alt="spring2019a" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Culture Show</div>
+  </div>
+</div>
+</br>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019c.jpg">
+      <img src="spring2019c.jpg" alt="spring2019c" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Beach Day</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019b.jpg">
+      <img src="spring2019b.jpg" alt="spring2019b" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Beach Day</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="fall2019reveal.jpg">
+      <img src="fall2019reveal.jpg" alt="fall2019reveal" width="600" height="400">
+    </a>
+    <div class="desc">Fall 2019 Reveal</div>
+  </div>
+</div>
 </div>
 	
 </body>
