@@ -11,6 +11,57 @@
 </head>
 	
 <style>
+		/*Responsive gallery style*/
+	div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+	
+	
+	/*Family tree*/
 	*, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -129,11 +180,7 @@ body {
 			</div>
 		  <div class="entry"><a class="label" style="color: rgb(255, 0, 0)" target="_blank" href="https://www.facebook.com/ryanpham97">Ryan Pham</a>
 			            <div class="branch lv3">
-            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/ryan.dea.35">Ryan Dea</a>
-				<div class="branch lv4">
-					<div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/ryan.dea.35">Ryan Dea</a>
-				</div>
-							</div>
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/ryan.dea.35">Ryan Dea</a></div>
             <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/thanh.l.panda">Thanh Vy</a></div>
           </div>
 		  </div>
@@ -151,6 +198,82 @@ body {
       </div>
     </div>
   </div>
+</div>
+	
+<p>Last patch: Fall 2019</p>
+<p>Credit outline: https://codepen.io/P233/pen/Kzbsi/</p>
+	
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="fall2018reveal.jpg">
+      <img src="fall2018reveal.jpg" alt="fall2018reveal" width="600" height="400">
+    </a>
+    <div class="desc">Fall 2018 Reveal</div>
+  </div>
+</div>
+	
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019reveal.jpg">
+      <img src="spring2019reveal.jpg" alt="spring2019reveal" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Reveal</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019a.jpg">
+      <img src="spring2019a.jpg" alt="spring2019a" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Culture Show</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019c.jpg">
+      <img src="spring2019c.jpg" alt="spring2019c" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Beach Day</div>
+  </div>
+</div>
+	
+			<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="ghostline.jpg">
+      <img src="ghostline.jpg" alt="ghostline" width="600" height="400">
+    </a>
+    <div class="desc">IDK? Rav?</div>
+  </div>
+</div>
+	
+				<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="wildbrian.jpg">
+      <img src="wildbrian.jpg" alt="wildbrian" width="600" height="400">
+    </a>
+    <div class="desc">Wild Brian appreared</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="spring2019b.jpg">
+      <img src="spring2019b.jpg" alt="spring2019b" width="600" height="400">
+    </a>
+    <div class="desc">Spring 2019 Beach Day</div>
+  </div>
+</div>
+
+		<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="fall2019reveal.jpg">
+      <img src="fall2019reveal.jpg" alt="fall2019reveal" width="600" height="400">
+    </a>
+    <div class="desc">Fall 2019 Reveal</div>
+  </div>
+</div>
 </div>
 
 </body>
