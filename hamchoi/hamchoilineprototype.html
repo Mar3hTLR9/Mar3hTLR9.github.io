@@ -1,10 +1,158 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+  <title>Ham Choi Line</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+	
+<style>
+	*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 50px;
+  color: #333;
+  font: 20px Verdana, sans-serif;
+  background: #dedede;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#wrapper {
+  position: relative;
+}
+
+.branch {
+  position: relative;
+  margin-left: 250px;
+}
+.branch:before {
+  content: "";
+  width: 50px;
+  border-top: 2px solid #333;
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.entry {
+  position: relative;
+  min-height: 60px;
+}
+.entry:before {
+  content: "";
+  height: 100%;
+  border-left: 2px solid #333;
+  position: absolute;
+  left: -50px;
+}
+.entry:after {
+  content: "";
+  width: 50px;
+  border-top: 2px solid #333;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  margin-top: 1px;
+}
+.entry:first-child:before {
+  width: 10px;
+  height: 50%;
+  top: 50%;
+  margin-top: 2px;
+  border-radius: 0 10px 0 0;
+}
+.entry:first-child:after {
+  height: 10px;
+  border-radius: 0 10px 0 0;
+}
+.entry:last-child:before {
+  width: 10px;
+  height: 50%;
+  border-radius: 0 0 10px 0;
+}
+.entry:last-child:after {
+  height: 10px;
+  border-top: none;
+  border-bottom: 2px solid #333;
+  border-radius: 0 0 10px 0;
+  margin-top: -9px;
+}
+.entry.sole:before {
+  display: none;
+}
+.entry.sole:after {
+  width: 50px;
+  height: 0;
+  margin-top: 1px;
+  border-radius: 0;
+}
+
+.label {
+  display: block;
+  min-width: 150px;
+  padding: 5px 10px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+}
+</style>
 
 <body>
+	<div id="wrapper"><a class="label" style="color: rgb(0, 0, 255)" target="_blank" href="https://www.facebook.com/JohnnyQuach1994">Johnny Quach</a>
+  <div class="branch lv1">
+    <div class="entry"><a class="label" style="color: rgb(60, 179, 113)" target="_blank" href="https://www.facebook.com/marco.bosano.7">Marco Bosano</a></div>
+    <div class="entry"><a class="label" style="color: rgb(60, 179, 113)" target="_blank" href="https://www.facebook.com/brian.chu.752">Brian Chu</a>
+      <div class="branch lv2">
+        <div class="entry"><a class="label" style="color: rgb(255, 0, 0)" target="_blank" href="https://www.facebook.com/timothy.le12">Timothy Le</a></div>
+        <div class="entry"><a class="label" style="color: rgb(255, 0, 0)" target="_blank" href="https://www.facebook.com/kevin.do.94">Kevin Do</a>
+		            <div class="branch lv3">
+            <div class="entry sole"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/andy.tran.313">Andy Tran</a></div>
+          </div>
+			</div>
+		  <div class="entry"><a class="label" style="color: rgb(255, 0, 0)" target="_blank" href="https://www.facebook.com/ryanpham97">Ryan Pham</a>
+			            <div class="branch lv3">
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/ryan.dea.35">Ryan Dea</a>
+				<div class="branch lv4">
+					<div class="entry sole"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/ryan.dea.35">Ryan Dea</a>
+				</div>
+							</div>
+							</div>
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/thanh.l.panda">Thanh Vy</a></div>
+          </div>
+		  </div>
+        <div class="entry"><a class="label" style="color: rgb(255, 0, 0)" target="_blank" href="https://www.facebook.com/vickychungalung">Vicky Chung</a>
+		  <div class="branch lv3">
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/an.ng.huynh?ref=br_rs">An Huynh</a></div>
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/brendurah">Brenda Le</a></div>
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/christian.tensuan">Christian Tensuan</a></div>
+			<div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/profile.php?id=100008622570947">Kaitlin Chung</a></div>
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/kevinroi.cabe">Kevin Roi Cabe</a></div>
+            <div class="entry"><a class="label" style="color: rgb(211, 91, 14)" target="_blank" href="https://www.facebook.com/profile.php?id=100010000170341">Michelle Nguyen</a>
+			  </div>
+          </div>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
