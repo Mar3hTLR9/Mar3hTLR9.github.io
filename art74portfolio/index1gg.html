@@ -15,6 +15,7 @@ p.code {
     text-align: left;
 }
 </style>
+<script type="text/javascript" src="processing.js"></script>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
     <li class="nav-item"><a id="heroName" class="nav-link" href="https://mar3htlr9.github.io/art74portfolio/index">Home</a></li>
@@ -31,66 +32,11 @@ p.code {
 
 <body>
 <div class="container-fluid text-center">
-  <h1>Processing Self Portrait</h1>
+  <h1>DIY Photoshop</h1>
   </br>
-  <p>This self portrait was made by using Processing and P5js. A completed code can be found under this portrait.</p>
+  <p>This DIY photoshop was made by using Processing and P5js. A completed code can be found under these examples.</p>
   </br>
-  <img class="img-fluid rounded" src="index1eeimage1.PNG" alt="index1eeimage1"> </br>
-  <p class="code"> function setup()<br>
-    {<br>
-    createCanvas(600, 600);<br>
-    angleMode(DEGREES);<br>
-    }<br>
-    <br>
-    function draw()<br>
-    {<br>
-    background(200);<br>
-    //Hair<br>
-    noStroke()<br>
-    //Edge<br>
-    fill(0);<br>
-    triangle(207, 290, 310, 135, 135, 110);<br>
-    triangle(393, 290, 290, 135, 465, 110);<br>
-    triangle(202, 208, 398, 208, 300, 2);<br>
-    //Hairstyle<br>
-    fill(240, 60, 20);<br>
-    triangle(210, 280, 300, 140, 140, 115);<br>
-    triangle(390, 280, 300, 140, 460, 115);<br>
-    triangle(210, 200, 390, 200, 300, 10);<br>
-    <br>
-    //Face<br>
-    noStroke()<br>
-    fill(252, 217, 172);<br>
-    ellipse(300, 280, 200, 280);<br>
-    <br>
-    //Ears<br>
-    noStroke()<br>
-    fill(252, 217, 172);<br>
-    arc(190, 280, 50, 70, 0, 270, OPEN);<br>
-    arc(410, 280, 50, 70, 270, 540, OPEN);<br>
-    <br>
-    //Eyes<br>
-    stroke(1);<br>
-    fill(255);<br>
-    arc(255, 230, 50, 60, 0, 180);<br>
-    arc(345, 230, 50, 60, 0, 180);<br>
-    //pupil<br>
-    noStroke();<br>
-    fill(0);<br>
-    ellipse(255, 240, 10, 10);<br>
-    ellipse(345, 240, 10, 10);<br>
-    <br>
-    //nose<br>
-    stroke(1);<br>
-    strokeWeight(3);<br>
-    line(300, 270, 320, 320);<br>
-    line(320, 320, 300, 330);<br>
-    <br>
-    //mouth<br>
-    stroke(1);<br>
-    fill(255);<br>
-    triangle(300, 400, 270, 350, 330, 350);<br>
-    } </p>
+  <canvas data-processing-sources="photoshop.js"></canvas>
   <a href="index">Back to landing page</a> </div>
 </body>
 </html>
