@@ -28,6 +28,8 @@ function draw()
   {
     newkeyChoice(choice);  // if the mouse is pressed call newkeyChoice
   }
+  
+  //Copy right protected
   noStroke();
   fill(0);
   text('Thinh Pham', 735, 597);
@@ -203,9 +205,13 @@ function drawOne()
 {//Horse symbol
   x = mouseX;
   y = mouseY;
+  
+  //Base
   noStroke();
   fill(255, 0, 0);
   rect(x-10, y-4, 20, 8);
+  
+  //Horse
   stroke(255, 0, 0);
   strokeWeight(2);
   line(x-5, y-5, x-5, y-20);
@@ -221,11 +227,17 @@ function drawTwo()
 {//Rood cross symbol
   x = mouseX;
   y = mouseY;
+  
+  //Base
   noStroke();
   fill(0, 255, 0);
   rect(x-10, y-4, 20, 8);
+  
+  //Cross
   stroke(0, 255, 0);
   strokeWeight(2);
+  
+  
   //Left portion
   line(x-5, y-5, x-5, y-20);
   line(x-5, y-20, x-10, y-20);
@@ -248,11 +260,16 @@ function drawThree()
 {//Red cross symbol
   x = mouseX;
   y = mouseY;
+  
+  //Base
   noStroke();
   fill(0, 0, 255);
   rect(x-10, y-4, 20, 8);
+  
+  //Red cross
   stroke(0, 0, 255);
   strokeWeight(2);
+  
   //Left portion
   line(x-2, y-5, x-2, y-10);
   line(x-2, y-10, x-7, y-10);
@@ -275,9 +292,13 @@ function drawFour()
 {//Human symbol
   x = mouseX;
   y = mouseY;
+  
+  //Base
   noStroke();
   fill(255, 255, 0);
   rect(x-10, y-4, 20, 8);
+  
+  //Human
   stroke(255, 255, 0);
   noFill();
   circle(x, y-25, 5);
