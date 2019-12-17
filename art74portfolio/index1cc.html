@@ -9,6 +9,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+
+<style>
+/*Responsive gallery style*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+}
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
     <li class="nav-item"><a id="heroName" class="nav-link" href="https://mar3htlr9.github.io/art74portfolio/index">Home</a></li>
@@ -34,7 +78,23 @@
     During this specific event,  families would gather around the yellow blossom trees, play some cardboard games, and  share memories of the previous year.</p>
   </br>
   </br>
-  <img class="img-fluid rounded" src="index1ccimage1.jpg" alt="index1ccimage1">
+			<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="index1ccimage1.jpg">
+      <img src="index1ccimage1.jpg" alt="spring2019a" width="1980" height="1080">
+    </a>
+    <div class="desc">Yellow Blossom Tree</div>
+  </div>
+</div>
+				<div class="responsive">
+  		<div class="gallery">
+    	<a target="_blank" href="index1ccimage2.jpg">
+      <img src="index1ccimage2.jpg" alt="spring2019a" width="1980" height="1080">
+    </a>
+    <div class="desc">Parchis board</div>
+  </div>
+</div>
+  <img target="_blank" class="img-fluid rounded" src="index1ccimage1.jpg" alt="index1ccimage1">
   <p>Yellow Blossom Tree</p>
   </br>
   <img class="img-fluid rounded" src="index1ccimage2.jpg" alt="index1ccimage2">
