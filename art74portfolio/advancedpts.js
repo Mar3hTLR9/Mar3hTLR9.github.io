@@ -38,11 +38,17 @@ function newkeyChoice(toolChoice)
   if (toolChoice == '[') 
   {//print image 1
     image(img1, mouseX, mouseY, 800, 600);
+    noStroke();
+    fill(0);
+    text('Thinh Pham', 735, 597);
   } 
   
   else if (toolChoice == ']') 
   {//print image 2
     image(img2, mouseX, mouseY, 800, 600);
+    noStroke();
+    fill(0);
+    text('Thinh Pham', 735, 597);
   } 
   
   else if (toolChoice == 'r' ) 
