@@ -58,11 +58,24 @@ div.desc {
 <div class="container-fluid text-center">
   <h1>Advanced DIYPTS</h1>
   </br>
-  <p>This DIY photoshop was made by using Processing and P5js. A completed code can be found under these examples. My final project is about developing more tools, in additional to the previous DIY Photoshop. The examples below are actual works of my friends using my code. See below for instructions.<br>
+  <p>This DIY photoshop was made by using Processing and P5js. A completed code can be found under these examples. My final project is about developing more tools, in additional to the previous DIY Photoshop. The examples below are actual works of my friends using my code. See below for more instructions.<br>
   <p class="instruction"> 
 	  If you do not have Processing with p5js, you can use this online website here: <a target="_blank" href="https://editor.p5js.org/">https://editor.p5js.org/</a><br>
+	  Note: this website includes an outside source for the p5.js library. Please allow the access to that website from your browser in order to use the live canvas below. The website is safe.<br>
 	  <br>
-	  Instruction:<br>
+	  P/s: For future purpose, here is how you include a live canvas from a js file to your website.<br>
+	  From your p5.js file, add to your setup() function:<br>
+  	  var canvas = createCanvas(800, 600); //so createCanvas cammand is now a variable<br>
+  	  canvas.parent('parentid'); //so you can add this id to your html code<br>
+	  <br>
+	  Add to your html head:<br>
+      script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js" //p5js library: to convert js to javascript<br>
+	  script src="yourjs" //the name of your js file goes here (add your js file to dreamweaver first (or something similar))<br>
+	  <br>
+	  Add to your html body:<br>
+	  div id="parentid" //add this line to where you want your canvas goes<br>
+	  <br>
+	  Functions of the live canvas:<br>
 	  Please press "[" or "]" key and start at thee tool has 3 basic colors for drawing lines (Red, Green, and Blue).<br>
     Press "r", "g", "b" for thin lines. Press "R", "G", "B" for thick lines (caplock (or hold shift) + r, g, b).<br>
     Press "," for a yellow block, or press "." for a white block.<br>
