@@ -12,8 +12,14 @@ function preload()
 
 function setup()
 {
-  createCanvas(800, 600);  // canvas size
-  background(screenbg);   // use our background screen color
+  //Dreamweaver (or other html) code
+  var canvas = createCanvas(800, 600);
+  canvas.parent('sketchy');
+  background(screenbg);
+	
+  // Processing code
+  //createCanvas(800, 600);  // canvas size
+  //background(screenbg);   // use our background screen color
 }
 
 function draw() 
